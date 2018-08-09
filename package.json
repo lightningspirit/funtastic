@@ -1,0 +1,49 @@
+{
+  "name": "fp",
+  "version": "0.1.0",
+  "description": "Functional Programming colllection of functions",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*.js"
+  ],
+  "scripts": {
+    "test": "mocha tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lightningspirit/fp.git"
+  },
+  "keywords": [
+    "functional",
+    "programming",
+    "functional",
+    "fp",
+    "library",
+    "lib",
+    "node",
+    "js",
+    "javascript",
+    "node.js"
+  ],
+  "author": {
+    "name": "lightningspirit",
+    "email": "lightningspirit@gmail.com",
+    "url": "https://lightningspirit.net"
+  },
+  "contributors": [
+    {
+      "name": "Casey Morris"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lightningspirit/fp/issues"
+  },
+  "homepage": "https://github.com/lightningspirit/fp#readme",
+  "engines": {
+    "node": ">=8.11.1"
+  },
+  "devDependencies": {
+    "mocha": "5.2.0"
+  }
+}
