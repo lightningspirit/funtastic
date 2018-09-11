@@ -44,6 +44,7 @@ describe('#copy()', () => {
 describe('#head()', () => {
   it('should return first element', () => {
     assert.equal(fp.head([1,2,3]), 1)
+    assert.equal(fp.head([]), null)
   })
 })
 
@@ -81,6 +82,7 @@ describe('#pluck()', () => {
     ]
     
     assert.deepEqual(fp.map(products, getPrices), [10,5,1])
+    assert.equal(fp.pluck('foo', null), null)
   })
 })
 
@@ -162,6 +164,7 @@ describe('#filter()', () => {
 
     assert.deepEqual(fp.filter(array, even), [2,4])
     assert.deepEqual(fp.filter(array, odd), [1,3,5])
+    assert.deepEqual(fp.filter(array, () => false), [])
   })
 })
 
