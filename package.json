@@ -1,7 +1,7 @@
 {
-  "name": "yfp",
+  "name": "@lightningspirit/fp",
   "version": "0.1.0",
-  "description": "Functional Programming colllection of functions",
+  "description": "Functional Programming library",
   "type": "module",
   "source": "src/index.ts",
   "exports": {

@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 export * from './core.js'
 export * from './list.js'
-// export * from './struct.js'
+export * from './struct.js'
 export * from './algebraic.js'
 export * from './memoize.js'
 export * from './optional.js'

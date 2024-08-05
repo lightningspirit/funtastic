@@ -40,8 +40,7 @@ export class Optional<T> implements Monad<T>, Semigroup<T> {
    * @param {T | undefined | null} x - The value to wrap in an Optional.
    * @returns {Optional<T>} An Optional instance containing the provided value.
    */
-  static of<T>(x?: T): Optional<T>
-  static of<T>(x?: T) {
+  static of<T>(x?: T): Optional<T> {
     return is(undefined, x) || is(null, x)
       ? new Optional<undefined>(undefined)
       : new Optional<T>(x)
@@ -54,8 +53,7 @@ export class Optional<T> implements Monad<T>, Semigroup<T> {
    * @param {(x: T) => U | undefined | null} fn - The mapping function.
    * @returns {Optional<U | undefined>} A new Optional instance with the mapped value.
    */
-  map<U>(fn: (x: T) => U): Optional<U>
-  map<U>(fn: (x: T) => U) {
+  map<U>(fn: (x: T) => U): Optional<U> {
     const y = fn(this.x)
 
     return is(undefined, y) || is(null, y)
@@ -70,8 +68,7 @@ export class Optional<T> implements Monad<T>, Semigroup<T> {
    * @param {Optional<(x: T) => U | undefined | null>} fn - The Optional containing the function to apply.
    * @returns {Optional<U | undefined>} A new Optional instance with the applied value.
    */
-  apply<U>(fn: Optional<(x: T) => U>): Optional<U>
-  apply<U>(fn: Optional<(x: T) => U>) {
+  apply<U>(fn: Optional<(x: T) => U>): Optional<U> {
     return is(undefined, fn.x) || is(null, fn.x)
       ? new Optional<undefined>(undefined)
       : this.map(fn.x)
@@ -84,8 +81,7 @@ export class Optional<T> implements Monad<T>, Semigroup<T> {
    * @param {(value: T) => Optional<U | undefined>} fn - The function to chain.
    * @returns {Optional<U | undefined>} A new Optional instance resulting from chaining the function.
    */
-  bind<U>(fn: (value: T) => Optional<U>): Optional<U>
-  bind<U>(fn: (value: T) => Optional<U>) {
+  bind<U>(fn: (value: T) => Optional<U>): Optional<U> {
     const y = fn(this.x).x
 
     return is(undefined, y) || is(null, y)

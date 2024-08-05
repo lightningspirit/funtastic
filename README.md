@@ -17,9 +17,16 @@ Functional Programming (FP) offers a paradigm shift that can fundamentally trans
 
 Adopting FP principles can significantly enhance the quality and maintainability of your codebase. By emphasizing immutability and pure functions, FP helps in building software that is robust and less prone to bugs. The modular nature of functional code makes it easier to test and reuse, leading to more efficient development processes.
 
+## Install
+```
+npm i @lightningspirit/fp
+```
+
 ## Usage
 ```ts
-import { Optional, Result, Effect, List, curry, compose, empty, is, match, map } from 'yfp';
+import {
+  Optional, Result, Effect, List, curry, compose, empty, is, match, map
+} from '@lightningspirit/fp';
 
 // Using Optional
 const person = Optional
