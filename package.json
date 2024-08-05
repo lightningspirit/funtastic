@@ -1,7 +1,7 @@
 {
-  "name": "@lightningspirit/fp",
+  "name": "funtastic",
   "version": "0.1.0",
-  "description": "Functional Programming library",
+  "description": "Functional Programming library for me and you",
   "type": "module",
   "source": "src/index.ts",
   "exports": {
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/moveyourdigital/yfp.git"
+    "url": "git+ssh://git@github.com/lightningspirit/funtastic.git"
   },
   "keywords": [
     "functional",
@@ -45,9 +45,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moveyourdigital/yfp/issues"
+    "url": "https://github.com/lightningspirit/funtastic/issues"
   },
-  "homepage": "https://github.com/moveyourdigital/yfp#readme",
+  "homepage": "https://github.com/lightningspirit/funtastic#readme",
   "engines": {
     "node": ">=18.18"
   },

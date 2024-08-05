@@ -1,4 +1,4 @@
-# Why FP?
+# Funtastic
 
 Functional Programming (FP) offers a paradigm shift that can fundamentally transform how we approach coding, problem-solving, and software architecture. The principles of FP emphasize immutability, pure functions, and higher-order functions, which collectively foster code that is more predictable, reusable, and easier to test.
 
@@ -19,14 +19,14 @@ Adopting FP principles can significantly enhance the quality and maintainability
 
 ## Install
 ```
-npm i @lightningspirit/fp
+npm i funtastic
 ```
 
 ## Usage
 ```ts
 import {
   Optional, Result, Effect, List, curry, compose, empty, is, match, map
-} from '@lightningspirit/fp';
+} from 'funtastic';
 
 // Using Optional
 const person = Optional
